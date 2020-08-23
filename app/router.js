@@ -7,4 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('que-es');
+  this.route('planes-de-accion');
+  this.route('tablero');
 });

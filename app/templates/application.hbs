@@ -1,3 +1,60 @@
-<h2 id="title">Welcome to Ember</h2>
+<BsNavbar id="main-navbar" @backgroundColor="primary-transparent" @type="dark" @position="sticky-top" @fluid={{true}} as |navbar|>
+  <div class="container">
+    <div class="navbar-header">
+    {{navbar.toggle}}
 
-{{outlet}}
+    <LinkTo @route="application" class="navbar-brand">
+      <img
+        src="logo-brand.png"
+        class="img-responsive"
+        title="Gobierno Abierto 2020"
+        alt="Guatemala"
+        height="50px"
+      >
+    </LinkTo>
+  </div>
+
+  <navbar.content>
+    <navbar.nav @justified={{false}} type="pills" class="ml-auto" as |nav|>
+      <nav.item>
+        <nav.link-to @route="que-es">
+          ¿Qué es Gobierno Abierto?
+        </nav.link-to>
+      </nav.item>
+      <nav.item>
+        <nav.link-to @route="planes-de-accion">
+          Planes de Acción
+        </nav.link-to>
+      </nav.item>
+      <nav.item>
+        <nav.link-to @route="tablero">
+          Tablero
+        </nav.link-to>
+      </nav.item>
+
+      <nav.item class="d-flex">
+        <a
+          href="https://www.facebook.com/Redciudadanagt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white my-auto mx-2"
+        >
+          <FaIcon @icon="facebook-f" @prefix="fab" />
+        </a>
+        <a
+          href="https://twitter.com/RedxGuate"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white my-auto mx-2"
+        >
+          <FaIcon @icon="twitter" @prefix="fab" />
+        </a>
+      </nav.item>
+    </navbar.nav>
+  </navbar.content>
+  </div>
+</BsNavbar>
+
+<main>
+  {{outlet}}
+</main>
