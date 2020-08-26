@@ -54,7 +54,10 @@ $enable-gradients: true;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+
+  .container {
+    min-height: 60vh;
+  }
 }
 
 #home-particpa-plan-accion {
@@ -62,7 +65,10 @@ $enable-gradients: true;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+
+  .container {
+    min-height: 60vh;
+  }
 }
 
 #que-es-header {
@@ -70,7 +76,10 @@ $enable-gradients: true;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+
+  .container {
+    min-height: 60vh;
+  }
 }
 
 .twitter-feed-placeholder {
