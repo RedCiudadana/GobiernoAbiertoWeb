@@ -54,7 +54,7 @@ $enable-gradients: true;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  min-height: 60vh;
 }
 
 #home-particpa-plan-accion {
@@ -62,6 +62,15 @@ $enable-gradients: true;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 60vh;
+}
+
+#que-es-header {
+  background-image: url('/img/background-header/que-es.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
 }
 
 .twitter-feed-placeholder {
