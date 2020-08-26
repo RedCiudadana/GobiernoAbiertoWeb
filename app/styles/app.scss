@@ -82,6 +82,36 @@ $enable-gradients: true;
   }
 }
 
+#que-es-header {
+  background-image: url('/img/background-header/planes-de-accion.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    min-height: 60vh;
+  }
+}
+
+#tablero-header {
+  background-image: url('/img/background-header/tablero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    min-height: 60vh;
+  }
+}
+
 .twitter-feed-placeholder {
   height: 35rem;
+}
+
+.hover\:secondary:hover {
+  background-color: $secondary !important;
+}
+
+.hover\:text-white:hover {
+  color: $white;
 }
