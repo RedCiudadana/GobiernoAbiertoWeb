@@ -20,7 +20,8 @@ module.exports = function(defaults) {
         '/',
         '/que-es',
         '/planes-de-accion',
-        '/tablero'
+        '/tablero',
+        '/encuentro'
       ]
     }
   });
