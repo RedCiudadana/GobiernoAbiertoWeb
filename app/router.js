@@ -10,4 +10,5 @@ Router.map(function() {
   this.route('que-es');
   this.route('planes-de-accion');
   this.route('tablero');
+  this.route('encuentro');
 });
